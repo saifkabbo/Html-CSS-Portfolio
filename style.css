@@ -109,7 +109,9 @@ nav li:hover {
   border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
-  animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation:
+    typing 5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -281,4 +283,26 @@ footer {
   height: 373px;
   width: 589px;
   border-radius: 39%;
+}
+
+.card_content:hover {
+  background: red;
+}
+
+.github {
+  color: white;
+}
+.github:hover {
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in-out;
+  transform: translate(2px, 2px) scale(1.1);
+}
+
+.github:active {
+  transform: translate(1px, 1px) scale(0.9);
+}
+
+.github:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--secondary-color);
 }
